@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<body>
+    <h1 style="background-color: yellow; color: red;"><center>TELANGANA STATE ROAD TRANSPORT CORPORATION</center></h1>
+    <h1 style="background-color: gray; "><center>GENERAL BUS PASS APPLICATION</center></h1>
+    <form action="./response.html">
+        <fieldset>
+            <legend>
+                Applicant Details
+            </legend>
+            
+                <table border="0" cellpadding="5">
+                    <tr>
+                        <td>
+                            Name
+                        </td>
+                        <td>
+                          <input type="text" name="uname" id="username" required maxlength="20">
+                        </td>
+                        <td>
+                            Father's/Guardian's
+                        </td>
+                        <td>  <input type="text" name="fname" id="fathername" required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Date Of births
+                        </td>
+                        <td>
+                             <input type="date" name="date" id="date" required>
+                        </td>
+                            <td>
+                                <label for="gender" >Genger</label>
+                            </td>
+                        <td>
+                            
+                            <input type="radio" name="gender" id="gender" value="male" required>Male
+                            <input type="radio" name="gender" id="gender" value="female" required>Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Age As on
+                        </td>
+                        <td>
+                            <input type="text" name="age" id="age">
+                        </td>
+                       
+                        <td>
+                            Adhaar No
+                        </td>
+                        <td>
+                             <input type="tel" name="adno" id="ano" maxlength="12">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            WhatsApp No
+                        </td>
+                        <td>
+                            <input type="tel" name="whatsapp" id="wno" maxlength="10" required>
+                        </td>
+                        <td>
+                            E-Mail Id 
+                        </td>
+                        <td>
+                             <input type="email" required name="email" id="mail" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Photo
+                        </td>
+                        <td>
+                             <input type="file"  required>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Residential Address Details
+            </legend>
+            <table border="0" cellpadding="15">
+                <tr>
+                    <td>Applicant's Address </td>
+                    <td>
+                        <textarea name="adrs" id="address" required maxlength="20"></textarea>
+                    </td>
+                    
+                    <td >District</td>
+                    <td>
+                        <select name="District" id="d" required>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Eluru">Eluru</option>
+                            <option value="Guntur">Guntur</option>
+                            <option value="Hyderabad">East Godavari</option>
+                        </select>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>Mandal</td>
+                    <td>
+                        <select name="mandal" id="mandal" required>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Pedavegi">Pedavegi</option>
+                            <option value="Denduluru">Denduluru</option>
+                            <option value="K.Kota">K.Kota</option>
+                        </select>
+                    </td>
+                    <td>Village</td>
+                    
+                    <td>
+                        <select name="mandal" id="mandal" required>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="vijayawada">Vijayawada</option>
+                            <option value="Eluru">Eluru</option>
+                            <option value="Gudivada">Gudivada</option>
+                        </select>
+                    </td>
+                
+
+                </tr>
+                <tr>
+                    <td>Pincode</td>
+                    
+                    <td>
+                        <input type="text" name="pin" id="pincode" required>
+                    </td>
+                    
+                </tr>
+          
+            </table>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Pass Type Details</legend>
+            <table border="0" cellpadding="5">
+                <tr>
+                    <td>City</td>
+                    
+                    <td>
+                        <select name="mandal" id="mandal" required>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Pedavegi">Pedavegi</option>
+                            <option value="Denduluru">Denduluru</option>
+                            <option value="K.Kota">K.Kota</option>
+                        </select>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>Pass Type</td>
+                    <td>
+                        
+                        <select name="pass" id="ptype" required>
+                            <option value="">--select---</option>
+                            <option value="General Pass">General Pass</option>
+                            <option value="Ordinary Pass">Ordinary Pass</option>
+                            
+                        </select>
+                    </td>
+
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mode Of Payment & Pass Collection</legend>
+            <table border="0" cellpadding="5" >
+                <tr>
+                    <td>Payment Mode</td>
+                    <td>
+                        <select name="payment" id="paytype" required>
+                            <option value="">--Select Payment Mode---</option>
+                            <option value="Payment at counter">Payment at counter</option>
+                            <option value="Payment on Online">Payment at Online</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pass Delivery Mode</td>
+                    <td>
+                        <select name="passmode" id="passmode" required>
+                        <option value="">--Select ---</option>
+                        <option value=" At counter">At counter</option>
+                        <option value="At Online">At Online</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td>Center at which you want to Collect Pass</td>
+                    <td>
+                        <select name="center" id="center" required>
+                            <option value="">--Select ---</option>
+                            <option value=" RTC KUKATPALLY - HYD">At counter</option>
+                            <option value="RTC JNTUH - HYD">At Online</option>
+                        </select>
+                    </td>
+                </tr>
+                
+            </table>
+        </fieldset>
+        <input type="submit" name="" id="" value="submit">
+    </form>
+</body>
+</html>
